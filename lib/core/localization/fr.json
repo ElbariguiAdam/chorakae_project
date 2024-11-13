@@ -1,0 +1,156 @@
+{
+    "login_view": {
+      "app_title": "BitBot",
+      "Login_welcome": "Bienvenue",
+      "log_in_sub": "Connectez-vous avec vos données.",
+      "forgot_pass": "Mot de passe oublié",
+      "Log_in": "Se connecter",
+      "Dont_have_an_account": "Vous n'avez pas de compte ?",
+      "go_sign_up": "Inscrivez-vous"
+    },
+  
+    "sign_up_view": {
+      "Lets_get_started": "Commençons",
+      "Sign_up_sub": "Créez un compte.",
+      "I_agree_with_the": "J'accepte les ",
+      "Terms_of_service": "Conditions d'utilisation ",
+      "privacy_policy": "et la politique de confidentialité.",
+      "continue": "Continuer",
+      "Do_you_have_an_account": "Vous avez un compte ?",
+      "go_Log_in": "Se connecter"
+    },
+  
+    "on_borading_view": {
+      "onboarding_1_title": "Trouvez l'article que vous recherchez",
+      "onboarding_1_desc": "Vous trouverez ici une riche variété de produits, soigneusement classés pour une expérience de navigation fluide.",
+      "onboarding_2_title": "Remplissez vos sacs de shopping",
+      "onboarding_2_desc": "Ajoutez tout article que vous souhaitez à votre panier, ou sauvegardez-le dans votre liste de souhaits, pour ne pas le manquer lors de vos futurs achats.",
+      "onboarding_3_title": "Paiement rapide et sécurisé",
+      "onboarding_3_desc": "De nombreuses options de paiement sont disponibles pour votre commodité.",
+      "skip": "Passer"
+    },
+  
+    "main_view": {
+      "home": "Accueil",
+      "discover": "Découvrir",
+      "cart": "Panier",
+      "settings": "Paramètres"
+    },
+  
+    "settings_view": {
+      "hi": "Bonjour,",
+      "pro_user": "Premium",
+      "account": "Compte",
+      "orders": "Commandes",
+      "returns": "Retours",
+      "wishlist": "Liste de souhaits",
+      "addresses": "Adresses",
+      "payment": "Paiement",
+      "personalization": "Personnalisation",
+      "notification": "Notification",
+      "language": "Langue",
+      "location": "Lieu",
+      "help_and_support": "Aide et support",
+      "get_help": "Obtenir de l'aide",
+      "faq": "FAQ",
+      "log_out": "Déconnexion"
+    },
+  
+    "discover_screen": {
+      "categories": "Catégories",
+      "on_sale": "En solde",
+      "all_robots": "Tous les robots",
+      "new_in": "Nouveautés",
+      "steam_toys": "Jouets STEAM",
+      "robot_kits": "Kits de robots",
+      "laser_cutters": "Découpeurs laser"
+    },
+  
+    "delivery_info_view": {
+      "loading": "Chargement...",
+      "error": "Erreur",
+      "delivery_details": "Détails de livraison",
+      "empty_info": "Les informations de livraison sont vides !",
+      "success_add": "Informations de livraison ajoutées avec succès !",
+      "success_edit": "Informations de livraison modifiées avec succès !"
+    },
+  
+    "delivery_info_form": {
+      "first_name": "Prénom",
+      "field_empty": "Ce champ ne peut pas être vide",
+      "last_name": "Nom",
+      "address_line_one": "Adresse ligne 1",
+      "address_line_two": "Adresse ligne 2",
+      "city": "Ville",
+      "zip_code": "Code postal",
+      "contact_number": "Numéro de contact",
+      "save": "Enregistrer",
+      "update": "Mettre à jour",
+      "cancel": "Annuler"
+    },
+  
+    "order_checkout": {
+      "title": "Confirmation de commande",
+      "delivery_details": "Détails de livraison",
+      "select_delivery_info": "Veuillez sélectionner les informations de livraison",
+      "selected_products": "Produits sélectionnés",
+      "order_summary": "Résumé de la commande",
+      "total_number_of_items": "Nombre total d'articles",
+      "total_price": "Prix total",
+      "delivery_charge": "Frais de livraison",
+      "total": "Total",
+      "confirm": "Confirmer",
+      "loading": "Chargement...",
+      "order_placed_success": "Commande passée avec succès",
+      "error": "Erreur",
+      "error_select_delivery_info": "Erreur \nVeuillez ajouter vos informations de livraison",
+      "edit": "Modifier"
+    },
+  
+    "order_view": {
+      "title": "Commandes",
+      "orders_empty": "Aucune commande !"
+    },
+  
+    "user_profile": {
+      "profile_title": "Profil",
+      "first_name_hint": "Prénom",
+      "last_name_hint": "Nom",
+      "email_hint": "Email",
+      "update_button": "Mettre à jour"
+    },
+  
+    "cart_view": {
+      "cart_title": "Panier",
+      "cart_empty_message": "Le panier est vide !",
+      "promo_code_hint": "Entrez votre code promo",
+      "total_items_text": "Total ({count} articles)",
+      "total_amount_text": "{amount}€",
+      "checkout_button": "Passer à la caisse"
+    },
+  
+    "chat_view": {
+      "chat_with_ai": "Discuter avec l'IA"
+    },
+  
+    "notification_view": {
+      "notfication": "Notification"
+    },
+  
+    "ecommerce_home_page": {
+      "irobot_title": "iRobot",
+      "irobot_description": "Robot interactif ressemblant à un humain pour l'apprentissage de la mécanique",
+      "education_solutions_title": "Solutions Éducatives BITBOT",
+      "education_solutions_description": "Robot interactif ressemblant à un humain pour l'apprentissage de la mécanique",
+      "steam_toys_title": "Jouets STEAM et Kits de Robots",
+      "steam_toys_description": "Embarquez pour un voyage d'apprentissage illimité pour PK-12 en découvrant les robots conçus pour libérer votre potentiel éducatif.",
+      "enrich_teaching_resources_title": "Enrichissez vos Ressources Pédagogiques",
+      "cases_and_cases_title": "Cours et Cas",
+      "cases_and_cases_description": "Transformez vos idées en projets réels captivants sans effort avec des logiciels faciles à utiliser.",
+      "projects_title": "Projets",
+      "projects_description": "Obtenez de l'inspiration dès aujourd'hui avec nos tutoriels pour alléger vos préparations.",
+      "get_resources_button_text": "Obtenir des Ressources",
+      "learn_more_button_text": "En savoir plus"
+    }
+  }
+  

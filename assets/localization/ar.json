@@ -1,0 +1,117 @@
+{
+  "login_view": {
+    "log_in_sub": "تسجيل الدخول إلى حسابك",
+    "forgot_pass": "نسيت كلمة المرور",
+    "Log_in": "تسجيل الدخول",
+    "remember_me": "تذكرني",
+    "Dont_have_an_account": "ليس لديك حساب؟",
+    "go_sign_up": "سجل الآن"
+  },
+  "sign_up_view": {
+    "Sign_up_sub": "إنشاء حساب جديد",
+    "I_agree_with_the": "أوافق على ",
+    "privacy_policy": "سياسة الخصوصية.",
+    "prenom": "الاسم الأول",
+    "Nom_de_famille": "الاسم الأخير",
+    "Nom_d'utilisateur": "اسم المستخدم",
+    "e_mail": "البريد الإلكتروني",
+    "Mot_de_passe": "كلمة المرور",
+    "Do_you_have_an_account": "هل لديك حساب؟",
+    "sabonner_la_newsletter": "الاشتراك في النشرة الإخبارية",
+    "go_Log_in": "تسجيل الدخول"
+  },
+  "main_view": {
+    "home": "الرئيسية",
+    "favorit": "المفضلة",
+    "Vendre": "بيع",
+    "Notifications": "الإشعارات",
+    "Compte": "الحساب"
+  },
+  "settings_view": {
+    "hi": "مرحباً،",
+    "pro_user": "مستخدم بريميوم",
+    "account": "الحساب",
+    "orders": "الطلبات",
+    "returns": "الإرجاع",
+    "wishlist": "قائمة الرغبات",
+    "addresses": "العناوين",
+    "payment": "الدفع",
+    "personalization": "التخصيص",
+    "notification": "الإشعارات",
+    "language": "اللغة",
+    "location": "الموقع",
+    "help_and_support": "المساعدة والدعم",
+    "get_help": "احصل على مساعدة",
+    "faq": "الأسئلة الشائعة",
+    "log_out": "تسجيل الخروج"
+  },
+  "Home_screen": {
+    "search": "بحث",
+    "Agriculture_sylviculture": "الزراعة والغابات...",
+    "Autres_activités": "أنشطة أخرى",
+    "Commerce_électronique": "التجارة الإلكترونية",
+    "Commerce_affaires": "التجارة والأعمال",
+    "Éducation": "التعليم",
+    "Hébergement_restauration_café": "الضيافة، المطاعم، المقاهي...",
+    "Immobilier": "العقارات",
+    "Santé": "الصحة",
+    "Services_soutien_entreprises": "خدمات دعم الشركات",
+    "Soutien_l'industrie": "دعم الصناعة",
+    "Technologie et communications": "التكنولوجيا والاتصالات",
+    "Fournir des services": "تقديم الخدمات",
+    "Véhicules_Transport_Logistique": "المركبات والنقل والخدمات اللوجستية", 
+    "showMore": "عرض المزيد",
+    "showLess": "عرض أقل"
+  },
+  "categories": {
+    "Sponsorisé": "برعاية",
+    "Entreprises en vedette": "شركات مميزة",
+    "Nouvelles annonces": "إعلانات جديدة"
+  },
+  "menu": {
+    "Mon_profile": "ملفي الشخصي",
+    "Franchise": "امتياز",
+    "Petits_projets_partenaires": "مشاريع صغيرة وشركاء",
+    "Formation_conseil_ressources": "التدريب والاستشارات والموارد",
+    "language": "اللغة",
+    "Contacter nous": "اتصل بنا",
+    "informations": "معلومات"
+  },
+  "notifications": {
+    "New": "جديد",
+    "Yesterday": "أمس"
+  },
+  "form_annonce": {
+    "nom": "الاسم",
+    "Etat": "الحالة",
+    "ville": "المدينة",
+    "Activité_commerciale": "النشاط التجاري",
+    "type": "النوع",
+    "prix": "السعر",
+    "Type_vérification": "نوع التحقق",
+    "Registre_commercial": "السجل التجاري",
+    "Veuillez_télécharger": "يرجى تحميل الصورة بتنسيق ( .png أو .jpg أو .jpeg ) بحجم أقصى 4 ميجا بايت",
+    "Description": "الوصف",
+    "Images": "الصور",
+    "Enregistrer": "حفظ"
+  },
+  "events": {
+    "precedent": "السابق",
+    "Suivant": "التالي",
+    "Publier_annonce": "نشر الإعلان",
+    "verification_Info": "يرجى التحقق من المعلومات المدخلة قبل نشر الإعلان"
+  },
+  "status": {
+    "vendu": "تم البيع",
+    "verifier": "تم التحقق"
+  }, 
+  "on_borading_view": {
+    "onboarding_1_title": "Trouvez l'article que vous recherchez",
+    "onboarding_1_desc": "Vous trouverez ici une riche variété de produits, soigneusement classés pour une expérience de navigation fluide.",
+    "onboarding_2_title": "Remplissez vos sacs de shopping",
+    "onboarding_2_desc": "Ajoutez tout article que vous souhaitez à votre panier, ou sauvegardez-le dans votre liste de souhaits, pour ne pas le manquer lors de vos futurs achats.",
+    "onboarding_3_title": "Paiement rapide et sécurisé",
+    "onboarding_3_desc": "De nombreuses options de paiement sont disponibles pour votre commodité.",
+    "skip": "Passer"
+  }
+}

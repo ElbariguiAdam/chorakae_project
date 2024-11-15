@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 abstract class PlatformWidgetFactory {
   Widget createButton(String label, VoidCallback onPressed);
   Widget createAlert(String message, BuildContext context);
-  Widget createBottomBar(BuildContext context);
   Widget createContextMEnu(BuildContext context);
 }
 
@@ -98,57 +97,7 @@ class AndroidWidgetFactory implements PlatformWidgetFactory {
         ),
       ),
     );
-    //  AlertDialog(
-    //   title: const Text("Android Alert"),
-    //   content: Text(message),
-    //   actions: [
-    //     TextButton(
-    //       onPressed: () => Navigator.pop(context),
-    //       child: const Text("OK"),
-    //     ),
-    //   ],
 
-    // );
-  }
-
-  @override
-  Widget createBottomBar(BuildContext context) {
-    int num = 0;
-    Widget getSelectedScreen(int num) {
-      switch (num) {
-        case 0:
-          return Container(
-            color: Colors.amber,
-          );
-        case 1:
-          return Container(
-            color: Colors.red,
-          );
-        case 2:
-          return Container(
-            color: Colors.blue,
-          );
-        default:
-          return Container();
-      }
-    }
-
-    return Scaffold(
-        bottomNavigationBar: BottomNavigationBar(items: const [
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.heart),
-            label: "Favorite",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.person),
-            label: "Profil",
-          ),
-        ]),
-        body: getSelectedScreen(num));
   }
 
   @override
@@ -203,42 +152,6 @@ class IOSWidgetFactory implements PlatformWidgetFactory {
     );
   }
 
-  @override
-  Widget createBottomBar(BuildContext context) {
-    return CupertinoTabScaffold(
-      tabBar: CupertinoTabBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.heart),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.person),
-          ),
-        ],
-      ),
-      tabBuilder: (context, index) {
-        switch (index) {
-          case 0:
-            return Container(
-              color: Colors.amber,
-            );
-          case 1:
-            return Container(
-              color: Colors.red,
-            );
-          case 2:
-            return Container(
-              color: Colors.blue,
-            );
-          default:
-            return Container();
-        }
-      },
-    );
-  }
 
   @override
   Widget createContextMEnu(BuildContext context) {

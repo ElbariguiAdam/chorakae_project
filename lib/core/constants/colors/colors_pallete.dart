@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-const Color blueColor = Color(0xFF00ADB5);
-const Color blueColor80 = Color(0xFF33C2C7);
-const Color blueColor60 = Color(0xFF66D6D9);
-const Color blueColor40 = Color(0xFF99EAEC);
+const Color blueColor = Color(0xFF0f70b7);
+const Color blueColor90 = Color(0xFF89c7f5);
+const Color blueColor80 = Color(0xFF5eb3f2);
+const Color blueColor60 = Color(0xFF349fee);
+const Color blueColor40 = Color(0xFF128ae2);
 
 const Color whiteColor = Colors.white;
 const Color whileColor80 = Color(0xFFCCCCCC);
@@ -20,4 +21,8 @@ const Color darkGreyColor = Color(0xFF1C1C25);
 const Color successColor = Color(0xFF2ED573);
 const Color warningColor = Color(0xFFFFBE21);
 const Color errorColor = Color(0xFFEA5B5B);
+
+const Color heartColor = Color(0xFFff3131);
+Color backHeartColor = const Color.fromARGB(109, 255, 49, 49);
+
 const Color trans = Colors.transparent;

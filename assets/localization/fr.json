@@ -1,0 +1,125 @@
+{
+    "login_view": {
+
+      "log_in_sub": "Connectez-vous à votre compte",
+      "forgot_pass": "Mot de passe oublié",
+      "Log_in": "Se connecter",
+      "remember_me":"Se souvenir de moi",
+      "Dont_have_an_account": "Vous n'avez pas de compte ?",
+      "go_sign_up": "Inscrivez-vous maintenant"
+    },
+  
+    "sign_up_view": {
+      "Sign_up_sub": "Créer un nouveau compte",
+      "I_agree_with_the": "J'accepte les ",
+      "privacy_policy": "les politique de confidentialité.",
+      "prenom": "Prenom", 
+      "Nom_de_famille": "Nom de famille",
+      "Nom_d'utilisateur": "Nom d'utilisateur",
+      "e_mail": "E-mail",
+      "Mot_de_passe": "Mot de passe",
+      "Do_you_have_an_account": "Déjà inscrit ?", 
+      "sabonner_la_newsletter": "S'abonner à la newsletter",
+      "go_Log_in": "Se connecter"
+    },
+  
+    "main_view": {
+      "home": "Accueil",
+      "favorit": "Favorite",
+      "Vendre": "Vendre", 
+      "Notifications": "Notifications",
+      "Compte": "Compte"
+    },
+  
+    "settings_view": {
+      "hi": "Bonjour,",
+      "pro_user": "Premium",
+      "account": "Compte",
+      "orders": "Commandes",
+      "returns": "Retours",
+      "wishlist": "Liste de souhaits",
+      "addresses": "Adresses",
+      "payment": "Paiement",
+      "personalization": "Personnalisation",
+      "notification": "Notification",
+      "language": "Langue",
+      "location": "Lieu",
+      "help_and_support": "Aide et support",
+      "get_help": "Obtenir de l'aide",
+      "faq": "FAQ",
+      "log_out": "Déconnexion"
+    },
+  
+    "Home_screen": {
+      "search": "Chercher",
+      "Agriculture_sylviculture": "Agriculture, sylviculture ...",
+      "Autres_activités": "Autres activités",
+      "Commerce_électronique": "Commerce électronique",
+      "Commerce_affaires": "Commerce et affaires",
+      "Éducation": "Éducation",
+      "Hébergement_restauration_café": "Hébergement,restauration, café..." ,
+      "Immobilier": "Immobilier",
+      "Santé": "Santé",
+      "Services_soutien_entreprises": "Services de soutien aux entreprises",
+      "Soutien_l'industrie": "Soutien à l'industrie" ,
+      "Technologie et communications": "Technologie et communications",
+      "Fournir des services": "Fournir des services" ,
+      "Véhicules_Transport_Logistique": "Véhicules, Transport et Logistique", 
+      "showMore": "Afficher plus",
+      "showLess": "Afficher moins"
+
+    },
+    "categories":{
+      "Sponsorisé": "Sponsorisé",
+      "Entreprises en vedette": "Entreprises en vedette",
+      "Nouvelles annonces": "Nouvelles annonces"
+    },
+    "menu":{
+      "Mon_profile": "Mon profile",
+      "Franchise": "Franchise",
+      "Petits_projets_partenaires": "Petits projets & partenaires", 
+      "Formation_conseil_ressources": "Formation & conseil & ressources",
+      "language": "Language",
+      "Contacter nous": "Contacter nous",
+      "informations": "Informations"
+    } ,
+    "notifications":{
+      "New":"New", 
+      "Yesterday":"Yesterday"
+    } ,
+    "form_annonce":{
+      "nom":"Nom", 
+      "Etat":"État", 
+      "ville":"Ville",
+      "Activité_commerciale":"Activité commerciale",
+      "type":"Type",
+      "prix":"Prix", 
+      "Type_vérification":"Type de vérification",
+      "Registre_commercial":"Registre commercial", 
+      "Veuillez_télécharger":"Veuillez télécharger votre image en format ( .png, .jpg ou .jpeg ) de taille maximale de 4 Mo",
+      "Description":"Description", 
+      "Images":"Images", 
+      "Enregistrer":"Enregistrer"
+    },
+    "events":{
+    "precedent":"Précédent", 
+    "Suivant":"Suivant", 
+    "Publier_annonce":"Publier l’annonce", 
+    "verification_Info":"Veuillez verifier les informations renseignees avant la publication de votre annonces"
+    },
+    "status":{
+      "vendu":"Vendu",  
+      "verifier":"Vérifié"
+
+    },
+    "on_borading_view": {
+      "onboarding_1_title": "Trouvez l'article que vous recherchez",
+      "onboarding_1_desc": "Vous trouverez ici une riche variété de produits, soigneusement classés pour une expérience de navigation fluide.",
+      "onboarding_2_title": "Remplissez vos sacs de shopping",
+      "onboarding_2_desc": "Ajoutez tout article que vous souhaitez à votre panier, ou sauvegardez-le dans votre liste de souhaits, pour ne pas le manquer lors de vos futurs achats.",
+      "onboarding_3_title": "Paiement rapide et sécurisé",
+      "onboarding_3_desc": "De nombreuses options de paiement sont disponibles pour votre commodité.",
+      "skip": "Passer"
+    }
+  }
+  

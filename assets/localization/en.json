@@ -1,0 +1,117 @@
+{
+  "login_view": {
+    "log_in_sub": "Log in to your account",
+    "forgot_pass": "Forgot password",
+    "Log_in": "Log in",
+    "remember_me": "Remember me",
+    "Dont_have_an_account": "Don’t have an account?",
+    "go_sign_up": "Sign up now"
+  },
+  "sign_up_view": {
+    "Sign_up_sub": "Create a new account",
+    "I_agree_with_the": "I agree with the ",
+    "privacy_policy": "privacy policy.",
+    "prenom": "First name",
+    "Nom_de_famille": "Last name",
+    "Nom_d'utilisateur": "Username",
+    "e_mail": "Email",
+    "Mot_de_passe": "Password",
+    "Do_you_have_an_account": "Already have an account?",
+    "sabonner_la_newsletter": "Subscribe to the newsletter",
+    "go_Log_in": "Log in"
+  },
+  "main_view": {
+    "home": "Home",
+    "favorit": "Favorite",
+    "Vendre": "Sell",
+    "Notifications": "Notifications",
+    "Compte": "Account"
+  },
+  "settings_view": {
+    "hi": "Hello,",
+    "pro_user": "Premium",
+    "account": "Account",
+    "orders": "Orders",
+    "returns": "Returns",
+    "wishlist": "Wishlist",
+    "addresses": "Addresses",
+    "payment": "Payment",
+    "personalization": "Personalization",
+    "notification": "Notification",
+    "language": "Language",
+    "location": "Location",
+    "help_and_support": "Help and support",
+    "get_help": "Get help",
+    "faq": "FAQ",
+    "log_out": "Log out"
+  },
+  "Home_screen": {
+    "search": "Search",
+    "Agriculture_sylviculture": "Agriculture, forestry...",
+    "Autres_activités": "Other activities",
+    "Commerce_électronique": "E-commerce",
+    "Commerce_affaires": "Business and trade",
+    "Éducation": "Education",
+    "Hébergement_restauration_café": "Hospitality, restaurants, cafes...",
+    "Immobilier": "Real estate",
+    "Santé": "Health",
+    "Services_soutien_entreprises": "Business support services",
+    "Soutien_l'industrie": "Industry support",
+    "Technologie et communications": "Technology and communications",
+    "Fournir des services": "Provide services",
+    "Véhicules_Transport_Logistique": "Vehicles, transport, and logistics", 
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  },
+  "categories": {
+    "Sponsorisé": "Sponsored",
+    "Entreprises en vedette": "Featured businesses",
+    "Nouvelles annonces": "New ads"
+  },
+  "menu": {
+    "Mon_profile": "My profile",
+    "Franchise": "Franchise",
+    "Petits_projets_partenaires": "Small projects & partners",
+    "Formation_conseil_ressources": "Training & consulting & resources",
+    "language": "Language",
+    "Contacter nous": "Contact us",
+    "informations": "Information"
+  },
+  "notifications": {
+    "New": "New",
+    "Yesterday": "Yesterday"
+  },
+  "form_annonce": {
+    "nom": "Name",
+    "Etat": "State",
+    "ville": "City",
+    "Activité_commerciale": "Business activity",
+    "type": "Type",
+    "prix": "Price",
+    "Type_vérification": "Verification type",
+    "Registre_commercial": "Commercial register",
+    "Veuillez_télécharger": "Please upload your image in ( .png, .jpg or .jpeg ) format with a maximum size of 4 MB",
+    "Description": "Description",
+    "Images": "Images",
+    "Enregistrer": "Save"
+  },
+  "events": {
+    "precedent": "Previous",
+    "Suivant": "Next",
+    "Publier_annonce": "Post ad",
+    "verification_Info": "Please check the provided information before publishing your ad"
+  },
+  "status": {
+    "vendu": "Sold",
+    "verifier": "Verified"
+  }, 
+  "on_borading_view": {
+    "onboarding_1_title": "Trouvez l'article que vous recherchez",
+    "onboarding_1_desc": "Vous trouverez ici une riche variété de produits, soigneusement classés pour une expérience de navigation fluide.",
+    "onboarding_2_title": "Remplissez vos sacs de shopping",
+    "onboarding_2_desc": "Ajoutez tout article que vous souhaitez à votre panier, ou sauvegardez-le dans votre liste de souhaits, pour ne pas le manquer lors de vos futurs achats.",
+    "onboarding_3_title": "Paiement rapide et sécurisé",
+    "onboarding_3_desc": "De nombreuses options de paiement sont disponibles pour votre commodité.",
+    "skip": "Passer"
+  }
+}

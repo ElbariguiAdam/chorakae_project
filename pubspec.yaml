@@ -53,6 +53,9 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_image_slideshow: any
+  textfield_tags: ^3.0.1
+  im_stepper: ^1.0.1+1
+  flutter_quill: ^10.8.5
 
 dev_dependencies:
   flutter_test:

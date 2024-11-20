@@ -2,7 +2,7 @@ import 'package:chorakae_project/core/base/blocs/local/app_localization.dart';
 import 'package:chorakae_project/core/constants/app_images_path/app_images_path.dart';
 import 'package:chorakae_project/core/constants/colors/colors_pallete.dart';
 import 'package:chorakae_project/core/responsive_helpers/sizer_helper_extensions.dart';
-import 'package:chorakae_project/feutures/annonce/presentation/widgets/costum_text_field.dart';
+import 'package:chorakae_project/core/base/widgets/costum_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 

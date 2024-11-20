@@ -3,20 +3,19 @@ import 'package:chorakae_project/core/responsive_helpers/sizer_helper_extensions
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
-class CustomTextField extends StatelessWidget {
-  final TextEditingController controller;
+class CustomDropdownField extends StatelessWidget {
+  final List<String> items;
   final String hintText;
-  final bool obscureText;
-  final FormFieldValidator<String>? validator;
-  final IconData? icon;
+  final ValueChanged<String?> onChanged;
+  final String? selectedItem;
+  final IconData iconData;
 
-  const CustomTextField({
-    required this.controller,
+  const CustomDropdownField({
+    required this.items,
     required this.hintText,
-    this.obscureText = false,
-    this.validator,
-    super.key,
-    this.icon = IconlyLight.search,
+    required this.onChanged,
+    this.selectedItem,
+    super.key, required this.iconData,
   });
 
   @override
@@ -24,16 +23,15 @@ class CustomTextField extends StatelessWidget {
     bool isdark = Theme.of(context).brightness == Brightness.dark;
     return Padding(
       padding: EdgeInsets.all(context.setMinSize(8)),
-      child: TextFormField(
-        cursorColor: whileColor60,
-        style: Theme.of(context).textTheme.bodyMedium,
-        controller: controller,
-        obscureText: obscureText,
-        validator: validator,
-        onTapOutside: (event) => FocusScope.of(context).unfocus(),
+      child: DropdownButtonFormField<String>(
+        value: selectedItem,
+        items: items
+            .map((item) => DropdownMenuItem(value: item, child: Text(item)))
+            .toList(),
+        onChanged: onChanged,
         decoration: InputDecoration(
           prefixIcon: Icon(
-            icon,
+            iconData,
             color: isdark ? whileColor80 : whileColor60,
           ),
           contentPadding:
@@ -52,13 +50,10 @@ class CustomTextField extends StatelessWidget {
                 color: isdark ? whileColor80 : whileColor80, width: 0.5),
             borderRadius: BorderRadius.circular(8.0),
           ),
-          errorBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: errorColor),
-            borderRadius: BorderRadius.circular(8.0),
-          ),
           filled: true,
           fillColor: isdark ? whileColor10 : lightGreyColor,
         ),
+        dropdownColor: isdark ? whileColor10 : lightGreyColor,
       ),
     );
   }

@@ -1,11 +1,12 @@
 {
   "login_view": {
-    "log_in_sub": "تسجيل الدخول إلى حسابك",
+    "log_in_title":"مرحبًا، أهلاً بعودتك! 👋",
+    "log_in_sub": "نحن سعداء برؤيتك. قم بتسجيل الدخول إلى حسابك",
     "forgot_pass": "نسيت كلمة المرور",
     "Log_in": "تسجيل الدخول",
     "remember_me": "تذكرني",
     "Dont_have_an_account": "ليس لديك حساب؟",
-    "go_sign_up": "سجل الآن"
+    "go_sign_up": " سجل الآن"
   },
   "sign_up_view": {
     "Sign_up_sub": "إنشاء حساب جديد",
@@ -18,7 +19,9 @@
     "Mot_de_passe": "كلمة المرور",
     "Do_you_have_an_account": "هل لديك حساب؟",
     "sabonner_la_newsletter": "الاشتراك في النشرة الإخبارية",
-    "go_Log_in": "تسجيل الدخول"
+    "go_Log_in": " تسجيل الدخول", 
+    "sign_up":"إنشاء حساب", 
+    "confirm_password":"تأكيد كلمة المرور"
   },
   "main_view": {
     "home": "الرئيسية",
@@ -113,5 +116,31 @@
     "onboarding_3_title": "Paiement rapide et sécurisé",
     "onboarding_3_desc": "De nombreuses options de paiement sont disponibles pour votre commodité.",
     "skip": "Passer"
-  }
+  }, 
+  "profile_details": {
+  "nom": "الاسم",
+  "nom_utilisateur": "اسم المستخدم",
+  "pays": "البلد",
+  "numero": "رقم الهاتف",
+  "mail": "البريد الإلكتروني",
+  "nationalite": "الجنسية",
+  "gamme_inves": "نطاق الاستثمار",
+  "profession": "المهنة",
+  "entreprise_prefere": "الشركات المفضلة",
+  "entreprise_presente": "الشركة التي تمثلها",
+  "avatar": "الصورة",
+  "genre": "الجنس",
+  "homme": "ذكر",
+  "femme": "أنثى",
+  "type_invest": "نوع الاستثمار",
+  "investissement_partiel": "استثمار جزئي",
+  "investissement_complet": "استثمار كامل",
+  "preference_pour_investissement": "تفضيل الاستثمار",
+  "preference_pour_gestion": "تفضيل الإدارة",
+  "type_compte": "نوع الحساب",
+  "acheteur": "مشتري",
+  "vendeur": "بائع",
+  "enregistrer": "حفظ"
+}
+
 }

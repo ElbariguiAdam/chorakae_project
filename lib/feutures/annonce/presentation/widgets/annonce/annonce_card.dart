@@ -1,5 +1,6 @@
 import 'package:chorakae_project/core/constants/colors/colors_pallete.dart';
 import 'package:chorakae_project/core/responsive_helpers/sizer_helper_extensions.dart';
+import 'package:chorakae_project/feutures/annonce/presentation/screens/annonce/annonce_page.dart';
 import 'package:chorakae_project/feutures/annonce/presentation/widgets/card_image.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
@@ -13,7 +14,12 @@ class AnnonceCard extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-        
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const AnnoncePage(),
+          ),
+        );
       },
       child: Card(
         elevation: 2,

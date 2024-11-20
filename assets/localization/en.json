@@ -1,11 +1,12 @@
 {
   "login_view": {
-    "log_in_sub": "Log in to your account",
+    "log_in_title":"Hi, Welcome Back! 👋",
+    "log_in_sub": "We’re happy to see you. Sign in to your account",
     "forgot_pass": "Forgot password",
     "Log_in": "Log in",
     "remember_me": "Remember me",
     "Dont_have_an_account": "Don’t have an account?",
-    "go_sign_up": "Sign up now"
+    "go_sign_up": " Sign up now"
   },
   "sign_up_view": {
     "Sign_up_sub": "Create a new account",
@@ -18,7 +19,11 @@
     "Mot_de_passe": "Password",
     "Do_you_have_an_account": "Already have an account?",
     "sabonner_la_newsletter": "Subscribe to the newsletter",
-    "go_Log_in": "Log in"
+    "go_Log_in": " Log in", 
+    "sign_up":"Sign Up", 
+    "confirm_password":"Confirm Password"
+
+
   },
   "main_view": {
     "home": "Home",
@@ -113,5 +118,31 @@
     "onboarding_3_title": "Paiement rapide et sécurisé",
     "onboarding_3_desc": "De nombreuses options de paiement sont disponibles pour votre commodité.",
     "skip": "Passer"
-  }
+  },
+  "profile_details": {
+  "nom": "Name",
+  "nom_utilisateur": "Username",
+  "pays": "Country",
+  "numero": "Phone Number",
+  "mail": "Email",
+  "nationalite": "Nationality",
+  "gamme_inves": "Investment Range",
+  "profession": "Profession",
+  "entreprise_prefere": "Preferred Companies",
+  "entreprise_presente": "Company You Represent",
+  "avatar": "Avatar",
+  "genre": "Gender",
+  "homme": "Male",
+  "femme": "Female",
+  "type_invest": "Investment Type",
+  "investissement_partiel": "Partial Investment",
+  "investissement_complet": "Full Investment",
+  "preference_pour_investissement": "Investment Preference",
+  "preference_pour_gestion": "Management Preference",
+  "type_compte": "Account Type",
+  "acheteur": "Buyer",
+  "vendeur": "Seller",
+  "enregistrer": "Save"
+}
+
 }

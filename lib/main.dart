@@ -6,7 +6,8 @@ import 'package:chorakae_project/core/responsive_helpers/sizer_helper_extensions
 import 'package:chorakae_project/core/theme/app_theme.dart';
 import 'package:chorakae_project/feutures/annonce/presentation/blocs/category_blocs/show_more_cubit.dart';
 import 'package:chorakae_project/feutures/annonce/presentation/blocs/main_wrapper_bloc/main_wrapper_bloc.dart';
-import 'package:chorakae_project/feutures/annonce/presentation/screens/main_wrapper.dart';
+import 'package:chorakae_project/feutures/annonce/presentation/blocs/pickimage/add_image_cubit.dart';
+import 'package:chorakae_project/feutures/auth/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -25,6 +26,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+        BlocProvider(
+          create: (context) => AddImageCubit(dr.imagePicker),
+        ),
         BlocProvider(
           create: (context) => ShowMoreCubit(),
         ),
@@ -68,7 +72,7 @@ class MyApp extends StatelessWidget {
               theme: AppTheme.lightTheme,
               darkTheme: AppTheme.darkTheme,
               themeMode: ThemeMode.system,
-              home: const MainWrapper(),
+              home: const SplashScreen(),
             );
           },
         ),

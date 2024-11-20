@@ -1,18 +1,15 @@
 import 'package:chorakae_project/core/base/blocs/local/app_localization.dart';
-import 'package:chorakae_project/core/base/widgets/list_tile/divider_list_tile.dart';
-import 'package:chorakae_project/core/constants/app_images_path/app_images_path.dart';
 import 'package:chorakae_project/core/constants/colors/colors_pallete.dart';
 import 'package:chorakae_project/core/responsive_helpers/sizer_helper_extensions.dart';
 import 'package:chorakae_project/feutures/annonce/presentation/blocs/main_wrapper_bloc/main_wrapper_bloc.dart';
-import 'package:chorakae_project/feutures/annonce/presentation/screens/annonce_page.dart';
+import 'package:chorakae_project/feutures/annonce/presentation/screens/annonce/add_annonce.dart';
 import 'package:chorakae_project/feutures/annonce/presentation/widgets/costum_app_bar.dart';
-import 'package:chorakae_project/feutures/annonce/presentation/widgets/profile_card.dart';
+import 'package:chorakae_project/feutures/annonce/presentation/widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
-import 'pages.dart';
+import 'pages_export.dart';
 
 class MainWrapper extends StatefulWidget {
   const MainWrapper({super.key});
@@ -55,156 +52,18 @@ class _MainWrapperState extends State<MainWrapper> {
   Widget build(BuildContext context) {
     bool isdark = Theme.of(context).brightness == Brightness.dark;
 
-    return Scaffold(
-      key: _scaffoldKey,
-      resizeToAvoidBottomInset: false,
-      drawer: _drawer(context, isdark),
-      appBar: _mainWrapperAppBar(_scaffoldKey),
-      body: _mainWrapperBody(),
-      bottomNavigationBar: _mainWrapperBottomNavBar(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: _mainWrapperFab(),
-    );
-  }
-
-  Drawer _drawer(BuildContext context, bool isdark) {
-    return Drawer(
-      child: Column(
-        children: [
-          Container(
-            alignment: Alignment.bottomLeft,
-            padding: EdgeInsets.only(
-              bottom: context.setMinSize(25),
-            ),
-            decoration: const BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: NetworkImage(
-                        'https://www.swissprint.com/wp-content/uploads/2024/11/IMG_1455-1024x768.jpeg'))),
-            width: double.infinity,
-            height: context.setHeight(220),
-            child: const ProfileCard(
-              isDrwaer: true,
-              email: 'elbariguiadam@gmail.com',
-              isPro: true,
-              name: 'Adam',
-              isShowArrow: false,
-              imageSrc:
-                  'https://th.bing.com/th/id/OIP.IGNf7GuQaCqz_RPq5wCkPgHaLH?rs=1&pid=ImgDetMain',
-              isShowHi: true,
-            ),
-          ),
-          DividerListTile(
-            press: () {},
-            title: Text(
-              "menu.Mon_profile".tr(context),
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: isdark ? whileColor80 : whileColor20,
-                  ),
-            ),
-            leading: const Icon(
-              IconlyLight.profile,
-            ),
-            // isShowDivider: false,
-            isShowForwordArrow: true,
-          ),
-          DividerListTile(
-            press: () {},
-            title: Text(
-              "menu.Franchise".tr(context),
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: isdark ? whileColor80 : whileColor20,
-                  ),
-            ),
-            leading: SvgPicture.asset(
-              AppImagesPath.kFranchise,
-              height: context.setHeight(30),
-              width: context.setWidth(30),
-              color: isdark ? whiteColor : whileColor10,
-            ),
-            // isShowDivider: false,
-            isShowForwordArrow: true,
-          ),
-          DividerListTile(
-            press: () {},
-            title: Text(
-              "menu.Petits_projets_partenaires".tr(context),
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: isdark ? whileColor80 : whileColor20,
-                  ),
-            ),
-            leading: SvgPicture.asset(
-              AppImagesPath.kPetitsprojets,
-              height: context.setHeight(30),
-              width: context.setWidth(30),
-              color: isdark ? whiteColor : whileColor10,
-            ),
-            // isShowDivider: false,
-            isShowForwordArrow: true,
-          ),
-          DividerListTile(
-            press: () {},
-            title: Text(
-              "menu.Formation_conseil_ressources".tr(context),
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: isdark ? whileColor80 : whileColor20,
-                  ),
-            ),
-            leading: SvgPicture.asset(
-              AppImagesPath.kFormationressources,
-              height: context.setHeight(30),
-              width: context.setWidth(30),
-              color: isdark ? whiteColor : whileColor10,
-            ),
-            // isShowDivider: false,
-            isShowForwordArrow: true,
-          ),
-          DividerListTile(
-            press: () {},
-            title: Text(
-              "menu.language".tr(context),
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: isdark ? whileColor80 : whileColor20,
-                  ),
-            ),
-            leading: SvgPicture.asset(
-              AppImagesPath.kLanguage,
-              height: context.setHeight(25),
-              width: context.setWidth(25),
-              color: isdark ? whiteColor : whileColor10,
-            ),
-            // isShowDivider: false,
-            isShowForwordArrow: true,
-          ),
-          DividerListTile(
-            press: () {},
-            title: Text(
-              "menu.Contacter nous".tr(context),
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: isdark ? whileColor80 : whileColor20,
-                  ),
-            ),
-            leading: const Icon(
-              IconlyLight.call,
-            ),
-            // isShowDivider: false,
-            isShowForwordArrow: true,
-          ),
-          DividerListTile(
-            press: () {},
-            title: Text(
-              "menu.informations".tr(context),
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: isdark ? whileColor80 : whileColor20,
-                  ),
-            ),
-            leading: const Icon(
-              IconlyLight.info_circle,
-            ),
-            // isShowDivider: false,
-            isShowForwordArrow: true,
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        key: _scaffoldKey,
+        resizeToAvoidBottomInset: false,
+        drawer: MainDrawer(
+          isdark: isdark,
+        ),
+        appBar: _mainWrapperAppBar(_scaffoldKey),
+        body: _mainWrapperBody(),
+        bottomNavigationBar: _mainWrapperBottomNavBar(context),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: _mainWrapperFab(),
       ),
     );
   }
@@ -270,11 +129,10 @@ class _MainWrapperState extends State<MainWrapper> {
     return FloatingActionButton(
       onPressed: () {
         Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) => const AnnoncePage(),
-          ),
-        );
+            context,
+            MaterialPageRoute(
+              builder: (context) => const AddAnnonce(),
+            ));
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
       backgroundColor: blueColor,

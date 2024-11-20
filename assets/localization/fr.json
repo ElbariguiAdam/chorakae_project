@@ -1,18 +1,18 @@
 {
     "login_view": {
-
-      "log_in_sub": "Connectez-vous à votre compte",
+      "log_in_title":"Salut, content de te revoir ! 👋",
+      "log_in_sub": "Nous sommes heureux de vous voir. Connectez-vous à votre compte",
       "forgot_pass": "Mot de passe oublié",
       "Log_in": "Se connecter",
       "remember_me":"Se souvenir de moi",
       "Dont_have_an_account": "Vous n'avez pas de compte ?",
-      "go_sign_up": "Inscrivez-vous maintenant"
+      "go_sign_up": " Inscrivez-vous maintenant"
     },
   
     "sign_up_view": {
       "Sign_up_sub": "Créer un nouveau compte",
       "I_agree_with_the": "J'accepte les ",
-      "privacy_policy": "les politique de confidentialité.",
+      "privacy_policy": "politique de confidentialité.",
       "prenom": "Prenom", 
       "Nom_de_famille": "Nom de famille",
       "Nom_d'utilisateur": "Nom d'utilisateur",
@@ -20,7 +20,9 @@
       "Mot_de_passe": "Mot de passe",
       "Do_you_have_an_account": "Déjà inscrit ?", 
       "sabonner_la_newsletter": "S'abonner à la newsletter",
-      "go_Log_in": "Se connecter"
+      "go_Log_in": " Se connecter", 
+      "sign_up":"S'inscrire", 
+      "confirm_password":"Confirmer le mot de passe"
     },
   
     "main_view": {
@@ -120,6 +122,31 @@
       "onboarding_3_title": "Paiement rapide et sécurisé",
       "onboarding_3_desc": "De nombreuses options de paiement sont disponibles pour votre commodité.",
       "skip": "Passer"
+    },
+    "profile_details":{
+      "nom":"Nom", 
+      "nom_utilisateur":"Nom d'utilisateur", 
+      "pays":"Pays", 
+      "numero":"Numéro de téléphone", 
+      "mail":"E-mail", 
+      "nationalite":"Nationalité",
+      "gamme_inves":"Gamme d'investissement", 
+      "profession":"Profession", 
+      "entreprise_prefere":"Entreprises préférées", 
+      "entreprise_presente":"L'entreprise que vous représentez", 
+      "avatar":"Avatar", 
+      "genre":"Genre", 
+      "homme":"Homme", 
+      "femme":"Femme", 
+      "type_invest":"Type d'investissement", 
+      "investissement_partiel":"Investissement partiel", 
+      "investissement_complet":"Investissement complet", 
+      "preference_pour_investissement":"Préférence pour l'investissement",
+      "preference_pour_gestion":"Préférence pour la gestion", 
+      "type_compte":"Type de compte", 
+      "acheteur":"Acheteur", 
+      "vendeur":"Vendeur", 
+      "enregistrer":"Enregistrer"
     }
   }
   

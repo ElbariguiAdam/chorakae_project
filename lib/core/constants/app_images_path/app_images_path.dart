@@ -16,7 +16,7 @@ class AppImagesPath {
       'assets/action_icons/Petits projets & partenaires.svg';
   static String kFormationressources =
       'assets/action_icons/Formation & conseil.svg';
-
+  static String kWhatsap = 'assets/action_icons/whatsap.svg';
   //-----------Categories_Icons--------------------//
   static String kAgriculture =
       'assets/categories_icons/Agriculture, sylviculture et pêche_icon.svg';

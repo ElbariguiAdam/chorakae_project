@@ -97,22 +97,51 @@ class NotificationsPage extends StatelessWidget {
     );
   }
 
-  Padding _notificationWidget(BuildContext context, bool isdark) {
+  Padding _notificationWidget(
+    BuildContext context,
+    bool isdark,
+  ) {
     return Padding(
       padding: EdgeInsets.only(
-          top: context.setMinSize(8), bottom: context.setMinSize(8)),
+          top: context.setMinSize(8), bottom: context.setMinSize(10)),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _iconContainer(context, isdark),
           SizedBox(
             width: context.setMinSize(8),
           ),
           Expanded(
-            child: Text(
-              "Nouveaux Services notifications!  ",
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: isdark ? whileColor80 : darkGreyColor,
-                  ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Sign in new contract",
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: isdark ? whileColor80 : darkGreyColor,
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+                SizedBox(
+                  height: context.setHeight(4),
+                ),
+                Text(
+                  "Review and sign contract same company",
+                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                        color: isdark ? whileColor60 : whileColor20,
+                        fontWeight: FontWeight.w500,
+                      ),
+                ),
+                SizedBox(
+                  height: context.setHeight(4),
+                ),
+                Text(
+                  "about 18 hours ago",
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                        color: isdark ? whileColor40 : whileColor60,
+                      ),
+                ),
+              ],
             ),
           ),
         ],
@@ -126,10 +155,13 @@ class NotificationsPage extends StatelessWidget {
         context.setMinSize(10),
       ),
       decoration: BoxDecoration(
-          shape: BoxShape.circle, color: isdark ? whileColor80 : blueColor),
+          borderRadius: BorderRadius.circular(context.setMinSize(5)),
+          // color: isdark ? whileColor80 : blueColor,
+          border: Border.all(color: isdark ? lightGreyColor : whileColor80)),
       child: Icon(
         IconlyBold.notification,
-        color: isdark ? whileColor5 : lightGreyColor,
+        size: context.setMinSize(20),
+        color: isdark ? lightGreyColor : whileColor5,
       ),
     );
   }

@@ -4,13 +4,36 @@ import 'package:chorakae_project/core/constants/colors/colors_pallete.dart';
 import 'package:chorakae_project/core/responsive_helpers/device_utils.dart';
 import 'package:chorakae_project/core/responsive_helpers/sizer_helper_extensions.dart';
 import 'package:chorakae_project/feutures/annonce/presentation/blocs/category_blocs/show_more_cubit.dart';
-import 'package:chorakae_project/feutures/annonce/presentation/widgets/annonce_card.dart';
+import 'package:chorakae_project/feutures/annonce/presentation/widgets/annonce/annonce_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:skeletonizer/skeletonizer.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  bool isActive = true;
+  @override
+  void initState() {
+    toggleBoolWithDelay();
+    super.initState();
+  }
+
+  void toggleBoolWithDelay() {
+    Future.delayed(const Duration(seconds: 2), () {
+      setState(() {
+        isActive = false;
+      });
+      print(
+          "isActive is now $isActive");
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -139,13 +162,16 @@ class HomePage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
           ),
           SizedBox(height: context.setMinSize(5)),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: 2,
-            itemBuilder: (context, index) => const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: AnnonceCard(),
+          Skeletonizer(
+            enabled: isActive,
+            child: ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: 2,
+              itemBuilder: (context, index) => const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: AnnonceCard(),
+              ),
             ),
           ),
         ],

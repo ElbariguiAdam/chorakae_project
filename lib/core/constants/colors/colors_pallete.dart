@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 const Color blueColor = Color(0xFF0f70b7);
-const Color blueColor90 = Color(0xFF89c7f5);
+const Color blueColor90 = Color.fromARGB(255, 168, 217, 255);
 const Color blueColor80 = Color(0xFF5eb3f2);
 const Color blueColor60 = Color(0xFF349fee);
 const Color blueColor40 = Color(0xFF128ae2);

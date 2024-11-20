@@ -1,6 +1,7 @@
 import 'package:chorakae_project/core/base/widgets/list_tile/divider_list_tile.dart';
 import 'package:chorakae_project/core/constants/colors/colors_pallete.dart';
 import 'package:chorakae_project/core/responsive_helpers/sizer_helper_extensions.dart';
+import 'package:chorakae_project/feutures/annonce/presentation/screens/profile_details_page.dart';
 import 'package:chorakae_project/feutures/annonce/presentation/widgets/profile_card.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
@@ -18,7 +19,16 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const ProfileCard(
+            ProfileCard(
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ProfileDetailsPage(),
+                  ),
+                );
+              },
+              isdark: isdark,
               email: 'elbariguiadam@gmail.com',
               name: 'Adam',
               imageSrc:
@@ -36,7 +46,6 @@ class ProfilePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
-
             DividerListTile(
               press: () {},
               title: Text(
